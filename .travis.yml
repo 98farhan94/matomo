@@ -88,6 +88,7 @@ dist: bionic
 script: $PIWIK_ROOT_DIR/tests/travis/travis.sh
 
 before_install:
+  - cat /etc/ImageMagick-6/policy.xml
   - . ./tests/travis/install_git_lfs.sh
 
 install:
